@@ -1,0 +1,94 @@
+extends common_parts/common_template.pug
+
+block vars
+	- var title = "Приют для кошек в Южном Бутово. Кошачий реабилитационный центр"
+	- var description = "Наш приют для кошек - здесь можно взять себе кошку из приюта. Кошачий приют ждет вас в Южном Бутово, приходите!"
+	- var keywords = "кошки, приют"
+
+	- var page_name = "shelter"
+	
+	- var body_class = "template-header"
+
+	- var pageId = 5
+
+block main
+	section.top-content-section
+		.container
+			.article-text__wrap
+				.article__top-title-line
+					h1.article__h1 Животные в нашем приюте
+				p.
+					При нашей клинике содержится приют для кошек. Волонтеры Москвы и области активно работают с нашей клиникой, принося нам на лечение кошек, надйенных на улице. После лечения они попадают в приют на реабилитацию. Просто выберете понравившегося четверолапого друга и заполните форму.
+				p.
+					Иногда волонтеры приносят на лечение и собак. У нас нет условий их содержать, поэтому они пернаправляются в партнерский приют ,специально для соба. По собакам всё равно звоните) - сориентируем.
+
+
+	section.shelter-section
+		.container
+			.shelter-enumeration__wrap
+
+
+				a(href="#fenia_dog").shelter-enumerations__item.popup-js
+					picture.shelter-enumeration__picture
+						+picture_shelter("shelter__image1","Жители приюта")
+
+					.shelter-enumeration__descriptor
+						h5.shelter-enumeration__h5 Феня - дворняжка с окрасом овчарки
+						p.shelter-enumeration__text-preview Верный, преданный, смышленый и очень забавный четырехлапый друг может стать вашим!
+						p.shelter-enumeration__pseudo-link Узнать подробнее о питомце
+
+
+				a(href="#alisa_cat").shelter-enumerations__item.popup-js
+					picture.shelter-enumeration__picture
+						+picture_shelter("shelter__image2","Жители приюта")
+
+					.shelter-enumeration__descriptor
+						h5.shelter-enumeration__h5 Алиса - красивая черно-белая кошечка
+						p.shelter-enumeration__text-preview Красивая, грациозная, черно-белая кошечка ищет дом и добрых, заботливых хозяев! Любит играть, подвижна, озорна.
+						p.shelter-enumeration__pseudo-link Узнать подробнее о питомце
+
+
+				a(href="#constantine_cat").shelter-enumerations__item.popup-js
+					picture.shelter-enumeration__picture
+						+picture_shelter("shelter__image3","Жители приюта")
+
+					.shelter-enumeration__descriptor
+						h5.shelter-enumeration__h5 Константин - добрый, но боевой кот!
+						p.shelter-enumeration__text-preview Константин мечтает обрести новый дом с добрым и заботливым хозяином, которому сможет стать настоящим преданным другом!
+						p.shelter-enumeration__pseudo-link Узнать подробнее о питомце
+
+				a(href="#vasilisa_cat").shelter-enumerations__item.popup-js
+					picture.shelter-enumeration__picture
+						+picture_shelter("shelter__image4","Жители приюта")
+
+					.shelter-enumeration__descriptor
+						h5.shelter-enumeration__h5 Василиса - нежная, ласковая и ручная
+						p.shelter-enumeration__text-preview Ищет хорошую семью, с которой сможет  забыть о страшных приключениях, которые ей пришлось пережить...
+						p.shelter-enumeration__pseudo-link Узнать подробнее о питомце
+
+				a(href="#rysia_cat").shelter-enumerations__item.popup-js
+					picture.shelter-enumeration__picture
+						+picture_shelter("shelter__image5","Жители приюта")
+
+					.shelter-enumeration__descriptor
+						h5.shelter-enumeration__h5 Непоседливая кошка Рыся
+						p.shelter-enumeration__text-preview Рыся с удовольствием дает себя гладить и держать на руках.
+						p.shelter-enumeration__pseudo-link Узнать подробнее о питомце
+
+				a(href="#marta_cat").shelter-enumerations__item.popup-js
+					picture.shelter-enumeration__picture
+						+picture_shelter("shelter__image6","Жители приюта")
+
+					.shelter-enumeration__descriptor
+						h5.shelter-enumeration__h5 Кошечка Марта
+						p.shelter-enumeration__text-preview Прекрасная серо-белая кошка ищет дом и любящего хозяина. Марте 5 месяцев. Она здорова и привита, приучена к лотку.
+						p.shelter-enumeration__pseudo-link Узнать подробнее о питомце
+
+				a(href="#chonia_cat").shelter-enumerations__item.popup-js
+					picture.shelter-enumeration__picture
+						+picture_shelter("shelter__image7","Жители приюта")
+
+					.shelter-enumeration__descriptor
+						h5.shelter-enumeration__h5 Кошечка Чоня
+						p.shelter-enumeration__text-preview Эту симпатичную черную кошку когда-то давно нашли в подвале жилого дома волонтеры. Она была испуганным котенком и боялась людей.
+						p.shelter-enumeration__pseudo-link Узнать подробнее о питомце

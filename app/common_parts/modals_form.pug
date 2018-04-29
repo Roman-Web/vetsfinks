@@ -1,0 +1,20 @@
+#callback.modal-callback.mfp-hide.mfp-with-anim
+	span.modals-close-cross.mfp-close
+
+	.modal-callback__form
+		h3.modal-callback__h3 Обратный звонок
+		p.modal-callback__text.
+			Заполните небольшую форму для связи <br>
+			с нашим специалистом. Мы перезвоним вам через 10 минут.
+
+		form.modal-callback__form-element
+
+			label.modal-callback__label Ваше имя*
+			input(type="text" placeholder="Иван Иванович" name="Имя" required).modal-callback__input
+
+			label.modal-callback__label Ваш телефон*
+			input(type="tel" placeholder="8 966 795 65 99" name="Телефон" required).modal-callback__input.modal-callback__input--phone.mask-phone
+
+			+personal_data
+
+			button.modal-callback__button Отправить

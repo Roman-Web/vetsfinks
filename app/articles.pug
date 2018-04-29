@@ -1,0 +1,90 @@
+extends common_parts/common_template.pug
+
+block vars
+	- var title = "Полезные и интересные материалы по уходу за домашними питомцами"
+	- var description = "Полезные и интересные материалы по уходу за домашними питомцами от ветеринарной клиники Сфинкс"
+	- var keywords = "полезные статьи"
+
+	- var page_name = "articles"
+	
+	- var body_class = "template-header"
+
+	- var pageId = 4
+
+block main
+	section.top-content-section
+		.container
+			.article-text__wrap
+				.article__top-title-line
+					h1.article__h1 Интересные статьи из мира животных
+
+
+	section.articles-section
+		.container
+			.articles-enumeration__wrap
+
+
+				a(href="inoculation-puppy.html").articles-enumerations__item
+					picture.articles-enumeration__picture
+						+picture_articles("preview__image-1","Акция 'Растем здоровыми!'")
+
+					.articles-enumeration__descriptor
+						h5.articles-enumeration__h5 Когда пора делать прививки щенкам?
+						p.articles-enumeration__date 05.04.2018
+						p.articles-enumeration__pseudo-link Узнать подробнее
+
+
+				a(href="right-left-hended-cats.html").articles-enumerations__item
+					picture.articles-enumeration__picture
+						+picture_articles("preview__image-2","Акция 'Название акции'")
+
+					.articles-enumeration__descriptor
+						h5.articles-enumeration__h5 Ученые обнаружили среди кошек «правшей» и «левшей»
+						p.articles-enumeration__date 05.04.2018
+						p.articles-enumeration__pseudo-link Узнать подробнее
+
+
+				a(href="registation-pets.html").articles-enumerations__item
+					picture.articles-enumeration__picture
+						+picture_articles("preview__image-3","Акция 'Скидка 10% для владельцев социальных карт'")
+
+					.articles-enumeration__descriptor
+						h5.articles-enumeration__h5 Регистрация домашних животных станет платной и обязательной
+						p.articles-enumeration__date 05.04.2018
+						p.articles-enumeration__pseudo-link Узнать подробнее
+
+				a(href="cat-medical-check-up.html").articles-enumerations__item
+					picture.articles-enumeration__picture
+						+picture_articles("preview__image-4","Акция 'Скидка 10% для владельцев социальных карт'")
+
+					.articles-enumeration__descriptor
+						h5.articles-enumeration__h5 Как понять, что кошку пора вести на осмотр?
+						p.articles-enumeration__date 05.04.2018
+						p.articles-enumeration__pseudo-link Узнать подробнее
+
+				a(href="brushing-teeth-dog.html").articles-enumerations__item
+					picture.articles-enumeration__picture
+						+picture_articles("preview__image-5","Акция 'Скидка 10% для владельцев социальных карт'")
+
+					.articles-enumeration__descriptor
+						h5.articles-enumeration__h5 Чистка зубов собакам
+						p.articles-enumeration__date 05.04.2018
+						p.articles-enumeration__pseudo-link Узнать подробнее
+
+				a(href="cat-on-the-windowsill.html").articles-enumerations__item
+					picture.articles-enumeration__picture
+						+picture_articles("preview__image-6","Акция 'Скидка 10% для владельцев социальных карт'")
+
+					.articles-enumeration__descriptor
+						h5.articles-enumeration__h5 Предотваращаем "полёты" кошек из окон
+						p.articles-enumeration__date 05.04.2018
+						p.articles-enumeration__pseudo-link Узнать подробнее
+
+				a(href="shearing-claws-dog.html").articles-enumerations__item
+					picture.articles-enumeration__picture
+						+picture_articles("preview__image-7","Акция 'Скидка 10% для владельцев социальных карт'")
+
+					.articles-enumeration__descriptor
+						h5.articles-enumeration__h5 Стрижка когтей у собак
+						p.articles-enumeration__date 05.04.2018
+						p.articles-enumeration__pseudo-link Узнать подробнее

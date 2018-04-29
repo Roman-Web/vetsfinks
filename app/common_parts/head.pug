@@ -1,0 +1,31 @@
+meta(charset='utf-8')
+meta(content='IE=edge', http-equiv='X-UA-Compatible')
+meta(content='width=device-width, initial-scale=1', name='viewport')
+
+title= title
+meta(content= description, name='description')
+meta(content= keywords, name='keywords')
+
+link(rel='shortcut icon', href='favicon.ico' type='image/x-icon')
+link(rel='icon', href='favicon.ico' type='image/x-icon')
+style
+	include ../include_html/inline.css
+script
+	include ../include_html/modernizr-custom.js
+//- link(rel="stylesheet", href="css/popup.css")
+
+//- PC-CSS
+link(rel="stylesheet", href="css/pc_common.css" media="(min-width: 1170px)")
+
+//- Small-PC-CSS
+link(rel="stylesheet" media="(min-width: 992px) and (max-width: 1169px)" href="css/1024.css")
+
+
+//- Tablets-CSS
+link(rel="stylesheet" media="(min-width: 750px) and (max-width: 991px)" href="css/800.css")
+link(rel="stylesheet" media="(min-width: 481px) and (max-width: 749px)" href="css/600.css")
+
+
+//- SmartPhones-CSS
+link(rel="stylesheet" media="(min-width: 321px) and (max-width: 480px)" href="css/480.css")
+link(rel="stylesheet" media="(width: 320px)" href="css/320.css")

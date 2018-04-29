@@ -1,0 +1,118 @@
+extends common_parts/common_template.pug
+
+block vars
+	- var title = "Полный перечень ветеринарных услуг - клиника ВетСфинкс"
+	- var description = "Таблица медицинских услуг ветклиники - прайс лист ветеринарии"
+	- var keywords = "ветклиника цены"
+
+	- var page_name = "price"
+	
+	- var body_class = "template-header"
+
+	- var pageId = 3
+
+block main
+	section.top-content-section
+		.container
+			.article-text__wrap
+				.article__top-title-line
+					h1.article__h1 Услуги и цены
+				p.
+					В нашем центре вы получите полный спектр обслуживания по лечению и диагностике заболевания у вашего питомца.<br>
+					Наша цель - хорошо вылечить вашего любимца и сделать вас своим постоянным клиентом :)) А не пытаться накручивать цены и пугать вас диагнозами.
+
+				p.
+					В нашем центре собрано всё лучшее оборудование для проведения хирургического лечения, диагностики заболеваний даже на ранних стадиях, лабораторных исследований, родовспоможения. Прайс актуален от 05.04.2018. По любым вопросам - звоите или воспользуйтесь кнопкой обратной связи.
+			
+
+	section.price-section
+		.container
+			.price-table
+
+				.price-table__info-block
+					.price-table__header
+						h3.price-table__h3 Терапевтические услуги
+						label.price-table__label.price-table__label--open-price Открыть прайс
+						label.price-table__label.price-table__label--close-price Скрыть прайс
+					.price-table__conten-table
+						include price_tables/therapy-table.pug
+
+				.price-table__info-block
+					.price-table__header
+						h3.price-table__h3 Вакцинация животных
+						label.price-table__label.price-table__label--open-price Открыть прайс
+						label.price-table__label.price-table__label--close-price Скрыть прайс
+					.price-table__conten-table
+						include price_tables/vaccination-table.pug
+
+
+				.price-table__info-block
+					.price-table__header
+						h3.price-table__h3 Хирургические услуги
+						label.price-table__label.price-table__label--open-price Открыть прайс
+						label.price-table__label.price-table__label--close-price Скрыть прайс
+					.price-table__conten-table
+						include price_tables/surgical-services-table.pug
+
+
+				.price-table__info-block
+					.price-table__header
+						h3.price-table__h3 Травматология
+						label.price-table__label.price-table__label--open-price Открыть прайс
+						label.price-table__label.price-table__label--close-price Скрыть прайс
+					.price-table__conten-table
+						include price_tables/traumatology-table.pug
+
+				.price-table__info-block
+					.price-table__header
+						h3.price-table__h3 Ритуальные услуги
+						label.price-table__label.price-table__label--open-price Открыть прайс
+						label.price-table__label.price-table__label--close-price Скрыть прайс
+					.price-table__conten-table
+						include price_tables/ritual-services.pug
+
+				.price-table__info-block
+					.price-table__header
+						h3.price-table__h3 Лабораторные исследования
+						label.price-table__label.price-table__label--open-price Открыть прайс
+						label.price-table__label.price-table__label--close-price Скрыть прайс
+					.price-table__conten-table
+						include price_tables/laboratory-research-table.pug
+
+
+	section.promotions-and-discounts.promotions-and-discounts--price-page
+		.container
+			.title-h2-line
+				h2.home-h2 Акции и скидки
+			
+			.promotions__wrap
+
+
+				a(href="#").promotions__item
+					picture.promotions__picture
+						+picture_jpg("img-1","Акция 'Растем здоровыми!'")
+
+					.promotions__descriptor
+						h5.home__h5 “Растем здоровыми!”
+						p.promotions__specification Акция для владельцев щенков и котят
+						p.pseudo-link Узнать подробнее
+
+
+				a(href="#").promotions__item
+					picture.promotions__picture
+						+picture_jpg("img-2","Акция 'Название акции'")
+
+					.promotions__descriptor
+						h5.home__h5 “Название акции”
+						p.promotions__specification Акция для волонтеров и других людей
+						p.pseudo-link Узнать подробнее
+
+
+				a(href="#").promotions__item
+					picture.promotions__picture
+						+picture_jpg("img-3","Акция 'Скидка 10% для владельцев социальных карт'")
+
+					.promotions__descriptor
+						h5.home__h5 Скидка 10%
+						p.promotions__specification Для владельцев социальных карт
+						p.pseudo-link Узнать подробнее

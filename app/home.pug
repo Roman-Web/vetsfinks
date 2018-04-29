@@ -1,0 +1,204 @@
+extends common_parts/common_template.pug
+
+block vars
+	- var title = "Ветсфинкс - клиника лечения животных. Ветклиника в Бутово"
+	- var description = "Ветеринарная клиника в Бутово - Ветсфинкс. Большой спектр услуг, современное обородувание, заботливые врачи. Заходите - убедитесь!"
+	- var keywords = "ВетСфинкс, ветклиника, ветеринарная клиника, клиника лечения животных"
+
+	- var page_name = "home"
+	
+	- var body_class = "hero-page"
+
+	- var pageId = 1
+
+
+block main
+	section.hero-section
+		.container
+			.hero-title
+				.hero-title__wrap
+					h1.home__h1 Ветеринарный центр “Сфинкс”
+					p.hero__subtitle Подзаголовок на две строчки вот такого размера и длины и еще одно слово
+					a(href="#services").btn-link.big-button.scrollto-js Посмотреть услуги
+
+
+	section.dear-friends-section
+		.container
+			.dear-friends__wrap
+				picture.dear-friends__picture
+					+picture_jpg("dog","Собака из ветклиники")
+
+				.dear-friends__text-block
+					h3.home__h3 Дорогие друзья!
+					p
+						strong Лучшие врачи ветеринарного центра "СФИНКС" ждут Вас<br> и Ваших питомцев.
+					p.
+						Мы всегда встречаем Вас улыбкой и помогаем максимально решить любой возникающий вопрос, начиная от питания и ухода за Вашими питомцами до диагностики и лечения заболеваний, выявленных у них.
+					p.
+						Мы ценим Вас и Ваше время. Для нас очень важен комфорт и удобство каждого клиента. Двери нашей клиники всегда открыты для Вас и Ваших любимцев!
+
+
+	section.types-of-services#services
+		.container
+			.title-h2-line
+				h2.home-h2 Виды услуг
+				a(href="price.html").services-link Посмотреть все услуги
+
+			.services-block
+
+				a(href="#").services__item
+					h4.home__h4 Лечебно-профилактическая деятельность
+					ul.orange__list
+						li терапевтический прием;
+						li процедурный прием;
+						li консультация по уходу, содержанию <br>и кормлению животных и др.
+
+				a(href="#").services__item
+					h4.home__h4 Лабораторно-диагностическая деятельность
+					ul.orange__list
+						li гематологическое исследование крови;
+						li биохимическое исследование крови;
+						li исследование пищеварительной <br>системы и кала и др.
+
+				a(href="#").services__item
+					h4.home__h4 Хирургическая деятельность
+					ul.orange__list
+						li кастрация собак, хорьков и кроликов,стерилизация кошек;
+						li остеосинтез, родовспоможение;
+						li катетеризация мочевого пузыря и др.
+
+				a(href="#").services__item
+					h4.home__h4 Дополнительные услуги
+					ul.orange__list
+						li вакцинация;
+						li стрижка собак и кошек;
+						li обрезка колтунов, когтей и зубов и др.
+
+
+	section.about-doctors
+		.container
+			.about-doctors__wrap
+
+				.about-doctors__text-block
+					h3.home__h3 О врачах и клинике
+					p.
+						У нас работают <strong>высококвалифицированные ветеринарные врачи</strong>, посещающие всевозможные конференции, семинары, лекции и т.д.. Специализирующиеся в кардиологии, хирургии, дерматологии, онкологии, ортопедии, травматологии, стоматологии, терапии, офтальмологии, лабораторной диагностике, УЗ-диагностике, ЭКГ, рентген-диагностике, а также специалисты по кормлению и зоогигиене. Узкие специалисты ведут прием строго по записи.
+					p.
+						<strong>На каждого пациента заводится карта – история болезни</strong>, 
+						где хранится вся информация, включая  анализы 
+						и дополнительные исследования. В распоряжении центра есть необходимое оборудование, позволяющее максимально быстро 
+						и точно диагностировать заболевание и в кратчайшие сроки быстро и эффективно его вылечить.
+					a(href="#").btn-link.big-button Узнать больше о центре
+
+
+				.about-doctors__slider__wrap
+					.about-doctors__slider.owl-slider-doctors.owl-carousel
+						img(src="img/doctors.jpg", alt="Доктора ветклиники").about-doctors__picture
+						img(src="img/doctors_2.jpg", alt="Доктора ветклиники").about-doctors__picture
+						img(src="img/doctors_3.jpg", alt="Доктора ветклиники").about-doctors__picture
+						img(src="img/doctors_4.jpg", alt="Доктора ветклиники").about-doctors__picture
+						
+					.hint-controls
+						.left-hint-control
+							<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="306px" height="306px" viewBox="0 0 306 306" style="enable-background:new 0 0 306 306;" xml:space="preserve">
+							<g>
+								<g id="keyboard-arrow-left">
+									<polygon points="247.35,270.3 130.05,153 247.35,35.7 211.65,0 58.65,153 211.65,306"/>
+								</g>
+							</g>
+							</svg>
+						.right-hint-control
+							<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="306px" height="306px" viewBox="0 0 306 306" style="enable-background:new 0 0 306 306;" xml:space="preserve">
+							<g>
+							<g id="chevron-right">
+							<polygon points="94.35,0 58.65,35.7 175.95,153 58.65,270.3 94.35,306 247.35,153"/>
+							</g>
+							</g>
+							</svg>
+
+
+	section.promotions-and-discounts
+		.container
+			.title-h2-line
+				h2.home-h2 Акции и скидки
+			
+			.promotions__wrap
+
+
+				a(href="#").promotions__item
+					picture.promotions__picture
+						+picture_jpg("img-1","Акция 'Растем здоровыми!'")
+
+					.promotions__descriptor
+						h5.home__h5 “Растем здоровыми!”
+						p.promotions__specification Акция для владельцев щенков и котят
+						p.pseudo-link Узнать подробнее
+
+
+				a(href="#").promotions__item
+					picture.promotions__picture
+						+picture_jpg("img-2","Акция 'Название акции'")
+
+					.promotions__descriptor
+						h5.home__h5 “Название акции”
+						p.promotions__specification Акция для волонтеров и других людей
+						p.pseudo-link Узнать подробнее
+
+
+				a(href="#").promotions__item
+					picture.promotions__picture
+						+picture_jpg("img-3","Акция 'Скидка 10% для владельцев социальных карт'")
+
+					.promotions__descriptor
+						h5.home__h5 Скидка 10%
+						p.promotions__specification Для владельцев социальных карт
+						p.pseudo-link Узнать подробнее
+
+
+	section.animal-shelter
+		.container
+			.title-h2-line
+				h2.home-h2 Животные в приюте
+				a(href="shelter.html").services-link Посмотреть всех животных
+
+
+			.animals__block
+
+				a(href="#alisa_cat").animals__picture-button.popup-js
+					picture.animals__picture--circle.animals__picture--circle--small
+						+picture_custom("/shelter/shelter__pets/alisa/","alisa_preview","Кошка Алиса")
+					p.animals__names Кошка Алиса
+
+
+				.animals__colunm
+					a(href="#vasilisa_cat").animals__picture-button.popup-js
+						picture.animals__picture--circle.animals__picture--circle--middle
+							+picture_custom("/shelter/shelter__pets/vasilisa/","vasilisa_preview","Кошка Василиса")
+						p.animals__names Кошка Василиса
+
+					a(href="#rysia_cat").animals__picture-button.popup-js
+						picture.animals__picture--circle.animals__picture--circle--middle
+							+picture_custom("/shelter/shelter__pets/rysia/","rysia_preview","Кошка Рыся")
+						p.animals__names Кошечка Рыся
+
+
+				a(href="#marta_cat").animals__picture-button--center-pic.popup-js
+					picture.animals__picture--circle.animals__picture--circle--big
+						+picture_custom("/shelter/shelter__pets/marta/","marta_preview","Кошка Марта")
+					p.animals__names Кошка Марта
+
+				.animals__colunm
+					a(href="#chonia_cat").animals__picture-button.popup-js
+						picture.animals__picture--circle.animals__picture--circle--middle
+							+picture_custom("/shelter/shelter__pets/chonia/","chonia_preview","Кошка Чоня")
+						p.animals__names Кошка Чоня
+
+					a(href="#constantine_cat").animals__picture-button.popup-js
+						picture.animals__picture--circle.animals__picture--circle--middle
+							+picture_custom("/shelter/shelter__pets/constantine/","constantine_preview","Кот Константин")
+						p.animals__names Кот Константин
+
+				a(href="#fenia_dog").animals__picture-button.popup-js
+					picture.animals__picture--circle.animals__picture--circle--small
+						+picture_custom("/shelter/shelter__pets/fenia/","fenia_preview","Собака Феня")
+					p.animals__names Собака Феня

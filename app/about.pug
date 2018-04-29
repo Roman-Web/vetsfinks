@@ -1,0 +1,246 @@
+extends common_parts/common_template.pug
+
+block vars
+	- var title = "О компании - всё о нашем ВетСфинксе. Сотрудники и режим работы"
+	- var description = "Информация о клинике ветсфинкс. Познакомьтесь с нами ближе!"
+	- var keywords = "о компании"
+
+	- var page_name = "about"
+	
+	- var body_class = "template-header"
+
+	- var pageId = 2
+
+block main
+	section.top-content-section
+		.container
+			.article-text__wrap
+				.article__top-title-line
+					h1.article__h1 Ветеринарный центр “Сфинкс”
+				p.
+					Наша клиника была "переоткрыта" в 2016 году. У компании сменился собственник и постепенно полностью сменился персонал. Сейчас у нас работают два замечательных врача: Кобелькова Надежда Николаевна - Главный врач и Кувашев Кульдей Атаевич - ветеринарный хирург.<br>
+					Наша клиника - ВетСфинкс - полностью оснащена оборудованием для операций, лабораторных исследований, диагностики заболеваний и травм.
+				p.
+					Приветливый персонал нашего центра всегда встретит вас улыбкой и поможет решить любой возникший вопрос, от питания и ухода за вашими питомцами до диагностики и лечения выявленных у них заболеваний.<br>
+					Мы делаем всё, чтобы цены на наши услуги были доступными, а качество лечения всегда осталавлось на высоте!
+			
+		.article-main-pic
+			picture.main__picure
+				+picture_jpg("about__doctors","Доктора клиники Ветсфинкс")
+
+
+	section.quote-block
+		.container
+			.quote-block__wrap
+				
+				.quote__text-block
+					blockquote
+						p.quote__text.
+							Цитата о центре, сказанная, <br>
+							к примеру, владелицей ветцентра, такого размера примерно.
+						p.quote__autor.
+							Елена Елашкина, владелец центра
+
+				picture.quote__picture
+					+picture_jpg("about__quote-pic","Кот на передержке")
+
+
+	section.team-section
+		.container
+			.article-text__wrap
+				.title-h2-line
+					h2.article-h2 Команда
+
+			.team__wrap
+
+
+				.team__item
+					picture.team__foto
+						+picture_jpg("about__team__doc-1","Кобелькова Надежда Николаевна")
+
+					.team__descriptor
+						h5.article__h5.
+							Кобелькова <br>
+							Надежда Николаевна
+						p.team__specification Главный врач
+
+
+				.team__item
+					picture.team__foto
+						+picture_jpg("about__team__doc-2","Кувашев Кульдей Атаевич")
+
+					.team__descriptor
+						h5.article__h5.
+							Кувашев <br>
+							Кульдей Атаевич
+						p.team__specification Ветеринарный врач, хирург
+
+
+				.team__item
+					picture.team__foto
+						+picture_jpg("about__team__doc-3","Лаборант")
+
+					.team__descriptor
+						h5.article__h5.
+							Петров <br>
+							Константин Евгеньевич
+						p.team__specification Лаборант
+
+
+				.team__item
+					picture.team__foto
+						+picture_jpg("about__team__doc-4","Парикмахер")
+
+					.team__descriptor
+						h5.article__h5.
+							Иванова <br>
+							Алиса Сергеевна
+						p.team__specification Парикмахер
+
+
+	section.testimonials-block
+		.container
+			.article-text__wrap
+				.title-h2-line
+					h2.article-h2 Отзывы клиентов
+
+			.testimonials__wrap.owl-slider-testimonials.owl-carousel
+
+
+				.testimonials__item
+					//- picture.testimonials__pic
+					//- 	+picture_png("testimonial__img-1","Отзыв о Ветклинике 1")
+
+					.testimonials__name
+						h4.article__h4 Юлия
+						p.testimonials__city г. Москва
+						a(href="#").testimonials__link
+							picture.testimonials__pic
+								img(src="img/vk.png", alt="Ссылка на страницу ВК клиента")
+
+					p.testimonials__text.
+						Хочу выразить огромную благодарность врачам клиники за их высокой профессионализм и чуткое отношение к животным. Мы попали туда 3 дня назад, все манипуляции сделали очень быстро, никаких разводов на деньги, только необходимое. Моя собака сейчас на стационарном лечении в клинике, и я верю, что благодаря заботе докторов все у нас будет хорошо!
+
+				
+				.testimonials__item
+					//- picture.testimonials__pic
+					//- 	+picture_png("testimonial__img-2","Отзыв о Ветклинике 2")
+
+					.testimonials__name
+						h4.article__h4 Валентина
+						p.testimonials__city г. Москва
+						a(href="#").testimonials__link
+							picture.testimonials__pic
+								img(src="img/vk.png", alt="Ссылка на страницу ВК клиента")
+
+					p.testimonials__text.
+						Персонал клиники очень внимательный, доброжелательный к животным и хозяевам. Все подробно рассказали о дальнейшем уходе, перед операцией кису осмотрели, взвесили, послушали сердечко. Успокоили хозяев)) Сразу после операции позвонила Динара, сообщила о состоянии кисы и сказала когда можно подъехать за ней.
+						Все сделали очень аккуратно и оперативно, главное никаких помпон не надо одевать, сбоку маленький прокол зашитый пластическим швом. Киса на второй день уже кушала и сходила в туалет, на третий день уже носилась по всей квартире как будто ничего и не было.
+						Ещё раз спасибо Вам большое за Вашу работу! Это очень важно когда есть такие профессионалы своего дела! Желаю Вам удачи и процветания!
+
+
+				.testimonials__item
+					//- picture.testimonials__pic
+					//- 	+picture_png("testimonial__img-1","Отзыв о Ветклинике 1")
+
+					.testimonials__name
+						h4.article__h4 Алекс
+						p.testimonials__city г. Москва
+						a(href="#").testimonials__link
+							picture.testimonials__pic
+								img(src="img/vk.png", alt="Ссылка на страницу ВК клиента")
+
+					p.testimonials__text.
+						У меня остались исключительно теплые и приятные воспоминания от визита. Хорошие врачи, все чисто, аккуратно, я приходил со своим четверонргим членом семью Каспером ( той такс) - была проблема с ушами, это частое заболевания у нашей породы... Назначили медикоментозное лечение - очень правильное и эффективное. Сейчас все в порядке - Каспер снова в бою!!!!
+
+					
+				.testimonials__item
+					//- picture.testimonials__pic
+					//- 	+picture_png("testimonial__img-2","Отзыв о Ветклинике 2")
+
+					.testimonials__name
+						h4.article__h4 Анонимный отзыв
+						p.testimonials__city г. Москва
+						a(href="#").testimonials__link
+							picture.testimonials__pic
+								img(src="img/vk.png", alt="Ссылка на страницу ВК клиента")
+
+					p.testimonials__text.
+						Здравствуйте клиника очень мне понравилась отзывчивые,доброжелательные врачи на все вопросы по содержанию,кормлению и лечению моего любимого питомца получили ответы. Огромное спасибо Кульдею Атаевичу и Надежде Николаевне.
+
+
+
+
+
+
+
+
+
+	section.form-block-appointment
+		.appointment__wrap
+
+			.appointment__form
+				h3.appointment__h3 Запись на прием
+				p.appointment__text.
+					Заполните небольшую форму для связи <br>
+					с нашим специалистом. Мы перезвоним вам через 10 минут.
+
+				form.appointment__form-element
+
+					label.appointment__label Ваше имя*
+					input(type="text" placeholder="Иван Иванович" name="").appointment__input
+
+					label.appointment__label Ваш телефон*
+					input(type="tel" placeholder="8 966 795 65 99").appointment__input
+
+					label.appointment__label Удобное время
+					.appointment__choice-time
+					select(name="Удобное время приема").appointment__select
+						option 9:00 - 10:00
+						option 10:00 - 11:00
+						option 11:00 - 12:00
+						option 12:00 - 13:00
+						option 13:00 - 14:00
+						option 14:00 - 15:00
+						option 15:00 - 16:00
+						option 16:00 - 17:00
+						option 17:00 - 18:00
+						option 18:00 - 19:00
+						option 19:00 - 20:00
+						option 20:00 - 21:00
+
+					+personal_data
+
+					a(href="#").btn-link.appointment-link Записаться
+
+
+			picture.appointment__pic
+				+picture_jpg("appointment__doctors","Запись на прием в ветклинику")
+
+
+	section.gallery-section
+		.container
+			.article-text__wrap
+				.title-h2-line
+					h2.article-h2 Галерея
+
+			.gallery-block
+				+picture_gallery("about_gallery__img-1","Главный врач ветклиники")
+				+picture_gallery("about_gallery__img-2","Врачи ветклиники")
+				+picture_gallery("about_gallery__img-3","Врачи ветклиники")
+				+picture_gallery("about_gallery__img-4","Наша клиника")
+				+picture_gallery("about_gallery__img-5","Врачи ветклиники")
+				+picture_gallery("about_gallery__img-6","Операционная")
+				+picture_gallery("about_gallery__img-7","Врачи ветклиники")
+				+picture_gallery("about_gallery__img-8","Врачи ветклиники")
+				+picture_gallery("about_gallery__img-9","Часть оформления клиники")
+				+picture_gallery("about_gallery__img-10","Врачи ветклиники")
+				+picture_gallery("about_gallery__img-11","Врачи ветклиники")
+				+picture_gallery("about_gallery__img-12","Врачи ветклиники")
+				+picture_gallery("about_gallery__img-13","Врачи ветклиники")
+				+picture_gallery("about_gallery__img-14","Врачи ветклиники")
+				+picture_gallery("about_gallery__img-15","Врачи ветклиники")
+				+picture_gallery("about_gallery__img-16","Врачи ветклиники")
+				+picture_gallery("about_gallery__img-17","Врачи ветклиники")
+				+picture_gallery("about_gallery__img-18","Врачи ветклиники")
+				+picture_gallery("about_gallery__img-19","Врачи ветклиники")

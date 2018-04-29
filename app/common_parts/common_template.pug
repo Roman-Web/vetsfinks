@@ -1,0 +1,25 @@
+include mixins.pug
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		block vars
+		include head.pug
+		+styles
+	body(class= body_class)
+		include header
+		block main
+		include footer
+
+		//- libs Css and JS
+		include libs.pug
+
+		//- Modal windows
+		include modals_form.pug
+		include modals_pets.pug
+
+		//- Initial script
+		script(src="js/common.js")
+
+		//- Include counters
+		include counters.pug

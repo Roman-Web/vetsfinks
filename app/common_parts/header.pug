@@ -1,0 +1,18 @@
+header
+	.container
+		.header-line
+
+			.logo
+				a(href="index.html")
+					+picture_png("logo", "Лого ВетСфинкс")
+
+			nav.head-nav__menu
+				each item, index in mainList
+					if pageId && index == pageId-1
+							+mainMenuItem(item.name, item.href)(class="head-nav__link--active")
+					else
+							+mainMenuItem(item.name, item.href)
+
+			.head-contacts
+				span.head-contacts__item 8 (499) 743-44-45
+				span.head-contacts__item 8 (965) 426-42-42

@@ -1,0 +1,63 @@
+extends common_parts/common_template.pug
+
+block vars
+	- var title = "Контакты ВетСфинкса"
+	- var description = "контакты"
+	- var keywords = "контакты"
+
+	- var page_name = "contacts"
+	
+	- var body_class = "template-header"
+
+	- var pageId = 6
+
+block main
+	section.cotacts-section
+		.container
+			.map-block__wrap
+
+				#zoo-map.map-block
+
+				.cotacts-section__contacts
+					h1.contacts__h1 Контакты
+
+					.contacts-block__wrap
+						h5.contacts__h5.contacts__h5--phone Телефоны:
+						span.contacts__info 8 (965) 426-42-42
+						span.contacts__info 8 (499) 743-44-45
+
+					.contacts-block__wrap
+						h5.contacts__h5.contacts__h5--email E-mail:
+						span.contacts__info info@vetsfinks.ru
+
+					.contacts-block__wrap
+						h5.contacts__h5.contacts__h5--address Адрес:
+						span.contacts__info г. Москва, Южное Бутово, ул. Изюмская, д. 43, к. 3
+
+					.contacts-block__wrap
+						h5.contacts__h5.contacts__h5--time Время работы:
+						span.contacts__info c 9:00 до 21:00, без перерывов и выходных
+
+
+
+	script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
+	script.
+		ymaps.ready(function () {
+				var myMap = new ymaps.Map('zoo-map', {
+					center: [55.5487,37.5707],
+					zoom: 16
+				}, 
+				{
+					searchControlProvider: 'yandex#search'
+				});
+				var zoomControl = new ymaps.control.ZoomControl({
+					options: {
+							size: "large"
+					}
+				});
+			myMap.controls.add(zoomControl);
+		var myPlacemark = new ymaps.Placemark([55.5487,37.5707], {}, {
+						preset: 'islands#redDotIcon'
+				});
+			myMap.geoObjects.add(myPlacemark);
+		});
